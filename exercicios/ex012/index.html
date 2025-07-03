@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospeado no meu próprio servidor</p>
+    <video width="320" height="240" poster="imagens/limoes-capa.png" controls>
+        <source src="midias/meu-video.mp4" type="video/mp4">
+        <source src="midias/meu-video.m4v" type="video/mp4">
+        <source src="midias/meu-video.webm" type="video/webm">
+        <source src="midias/meu-video.ogg" type="video/ogg">
+        <p>Seu navegador não suporta o elemento de vídeo.</p>
+    </video>    
+
+
+    <h1>Inserindo vídeos no YouTube</h1>
+    <p>Para inserir vídeos do YouTube, você pode usar a tag <code>&lt;iframe&gt;</code>. Aqui está um exemplo:</p>
+    <iframe width="320" height="290" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

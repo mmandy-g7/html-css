@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: aquamarine;
+            margin: 0px;
+            
+        }
+        header {
+            background-color: #04b39b;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px #0000003d;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #52ebd6;
+            padding: 1px;
+            box-shadow: 5px 3px 7px 1px #0000003d;
+            border-radius: 10px;
+        }
+        nav a {
+            color: #04b39b;
+            text-decoration: none;
+            padding: 30px;
+        }
+        nav a:hover {
+            text-decoration: none;
+            color: #ccfff7;
+        }
+        main {
+            margin: 10px;
+            padding: 10px;
+            background-color: #ccfff7;
+            border-radius: 10px;
+            box-shadow: 5px 3px 7px 1px #0000003d;
+        }
+        article > aside {
+            background-color: #52ebd6;
+            color: rgb(0, 0, 0);
+            padding: 5px auto;
+           
+        }
+        footer {
+            background-color: #04b39b;
+            color: white;
+            text-align: center;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GROUPING TAGS</h1>
+        <nav>
+            <a href="#about">Sobre</a>
+            <a href="#site">Site</a>
+            <a href="#contact">Contato</a>
+            <a href="#help">Ajuda</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Aprendendo a organizar conteúdos</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Estudando Grouping Tags</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, optio voluptas delectus voluptates ducimus, tempore autem sed excepturi similique impedit iusto illo qui perferendis ea reprehenderit laboriosam assumenda voluptatibus aliquam!
+                </p>
+                <aside>
+                    <p>Artigo escrito por Amanda Massa</p>
+                </aside>
+            </article>
+
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2023 Grouping Tags. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
