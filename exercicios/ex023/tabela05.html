@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 23</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        col.cnome {
+            background-color: chartreuse;
+        }
+        col.cgrupo {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Amanda</td>
+            <td>NB</td>
+            <td>31</td>
+            <td>Artista 2D</td>
+        </tr>
+        <tr>
+            <td>Nemo</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Nadador</td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Max</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Colecionador</td>
+        </tr>
+        <tr>
+            <td>Michael</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Aventureiro</td>
+        </tr>
+        <tr>
+            <td>Poetry</td>
+            <td>NB</td>
+            <td>28</td>
+            <td>Estilista</td>
+        </tr>
+        <tr>
+            <td>Cora</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Gamer</td>
+        </tr>
+    </table>
+</body>
+</html>
