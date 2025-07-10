@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <!--<method:"GET"> usar para quando não pede dados sensíveis, envios de fotos, e não pode ultrapassar 3000 bytes)
+    <method:"POST"> usar para quando pede dados sensíveis (como número de cartão, endereço, documentos), quando não quer que os dados apareçam na URL-->
+
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><lable for="inome">Nome:</lable> <input type="text" name="nome" id="nome"></p>
+        <p><lable for="isobrenome">Sobrenome:</lable> <input type="text" name="sobrenome" id="sobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
