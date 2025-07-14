@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Media Query</h1>
         <span id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
@@ -30,6 +31,16 @@
         </article>
     </main>
     <script>
+
+        function mudouTamanho() {
+            const menu = document.querySelector('menu');
+            if (window.innerWidth >= 600) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+
         function clickMenu() {
             const menu = document.querySelector('menu');
             if (menu.style.display === 'block') {
