@@ -7,9 +7,10 @@
     <style>
         div.container {
             background-color: lightsalmon;
-
+            height: 400px;
             display: flex;
-            flex-flow: row nowrap;
+            flex-flow: row wrap;
+            align-items: stretch; /* Default value */
 
             /* flex-flow = flex-direction + flex-wrap */
         }
@@ -18,24 +19,30 @@
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
-            padding: 20px;
-            border-radius: 10px;
-            /* flex-shrink = 1 // flex-grow = 0 */
+            padding: 10px;
         }
 
         div#i1 {
-            flex: 0 1 100px;
+            align-items: flex-start;
         }
         div#i2 {
-            flex: 1 1 100px;
+            align-items: baseline;
         }
         div#i3 {
-            flex: 0 2 100px;
+            align-self: flex-end;
         }
-        /* flex = <flex-grow> <flex-shrink> <flex-basis>
-           flex: inicial = flex: 0 1 auto
-           flex: none = flex: 0 0 auto
-           flex: auto = flex: 1 1 auto */
+        div#i4 {
+            align-self: start;
+        }
+        div#i5 {
+            align-self: center;
+        }
+        div#i6 {
+            align-self: auto;
+        }
+        div#i7 {
+            align-self: stretch;
+        }
 
     </style>
 </head>
@@ -44,6 +51,10 @@
         <div class="item" id="i1">A</div>
         <div class="item" id="i2">B</div>
         <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
     </div>
 </body>
 </html>
